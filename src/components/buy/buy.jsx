@@ -22,17 +22,11 @@ import { Navigation } from "swiper";
 export default function Buy() {
  
     let dispatch = useDispatch();
-    const [Comp, setComp] = useState([])
-    const Composition = useSelector((state) => state.allTypes.type)
-    let Comps = Composition.composition;
+    const Composition =  useSelector((state) => state.allTypes.type)
+    // let Comps = Composition.indexComposition;
 
+    console.log(Composition)
 
-    useEffect(()=>{
-     setComp(Comps)
-     console.log(Comps)
-    },[Comps])
-    console.log( Composition.name )
-    
 
     const Next =()=>{
         document.querySelector(".swiper-button-next").click()
@@ -42,6 +36,7 @@ export default function Buy() {
         document.querySelector(".swiper-button-prev").click()
 
     }
+
   return (
     <>
     
@@ -63,8 +58,13 @@ export default function Buy() {
                                   <div className="token-composition">
                                       <h3>Token Composition</h3>
                                       <div className="compositions">
-                                          {Comp.map((e,key) => {
+                                          {
+                                          
+                                          
+                                          
+                                          Composition.composition?.map((e,key) => {
                                               return (
+                                                <>
                                                   <div className="composition" key={key}>
                                                       <div className="composition-top">
                                                           <img src={`https://test.joinclamp.com/tokens/${e.tokenName}.svg`} alt="" />
@@ -79,7 +79,7 @@ export default function Buy() {
                                                               <span>0.000010742588281163539</span>
                                                           </div>
                                                       </div>
-                                                  </div>
+                                                  </div></>
                                               )
                                           })}
 
@@ -112,8 +112,8 @@ export default function Buy() {
                                   <div className="token-composition">
                                       <h3>Token Composition</h3>
                                       <div className="compositions">
-                                          {Comp.map((e,key) => {
-                                              return (
+                                          {Composition.composition?.map((e,key) => {
+                                              return (<>
                                                   <div className="composition" key={key}>
                                                       <div className="composition-top">
                                                           <img src={`https://test.joinclamp.com/tokens/${e.tokenName}.svg`} alt="" />
@@ -127,7 +127,9 @@ export default function Buy() {
                                                           </div>
                                                     
                                                       </div>
-                                                  </div>
+                                                  </div>                                 
+                                                               </>
+
                                               )
                                           })}
 

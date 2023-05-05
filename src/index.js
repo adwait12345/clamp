@@ -50,11 +50,11 @@ root.render(
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
         <Provider store={store}>
-          <PersistGate loading={null} persistor={Persistor}>
+          {/* <PersistGate loading={null} persistor={Persistor}> */}
 
             <App />
 
-          </PersistGate>
+          {/* </PersistGate> */}
         </Provider>      </RainbowKitProvider>
     </WagmiConfig>
   </React.StrictMode>
