@@ -4,7 +4,7 @@ import { ActionTypes } from "../Action-Types/action-type";
 
 const initialState = {
     platforms: ["Select"],
-    type:[  ]
+    type:[]
 
     ,
     down:false,

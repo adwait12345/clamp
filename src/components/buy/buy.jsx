@@ -20,14 +20,19 @@ import { Navigation } from "swiper";
 
 
 export default function Buy() {
+ 
     let dispatch = useDispatch();
     const [Comp, setComp] = useState([])
     const Composition = useSelector((state) => state.allTypes.type)
+    let Comps = Composition.composition;
+
 
     useEffect(()=>{
-        setComp(Composition.composition)
-        console.log(Comp)
-    },[Composition])
+     setComp(Comps)
+     console.log(Comps)
+    },[Comps])
+    console.log( Composition.name )
+    
 
     const Next =()=>{
         document.querySelector(".swiper-button-next").click()
@@ -58,7 +63,25 @@ export default function Buy() {
                                   <div className="token-composition">
                                       <h3>Token Composition</h3>
                                       <div className="compositions">
-
+                                          {Comp.map((e,key) => {
+                                              return (
+                                                  <div className="composition" key={key}>
+                                                      <div className="composition-top">
+                                                          <img src={`https://test.joinclamp.com/tokens/${e.tokenName}.svg`} alt="" />
+                                                          <p>{e.tokenName} <br /> <span>{e.tokenName}</span></p>
+                                                      </div>
+                                                      <div className="composition-bet">
+                                                          <div className="composition-bet-top">
+                                                              <p>50.00%</p>
+                                                          </div>
+                                                          <div className="composition-bet-bot">
+                                                              <input type="range" name="" id="" />
+                                                              <span>0.000010742588281163539</span>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              )
+                                          })}
 
 
                                       </div>
