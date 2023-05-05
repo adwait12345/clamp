@@ -61,9 +61,9 @@ const Open =()=>{
     {
     Loading?<Skletons/>:
     
-    Response.map((e)=>{
+    Response.map((e,key)=>{
       return(
-        <div className="card" id='card' onClick={() => { Open(); dispatch(setType({name:e.indexName,composition:e.indexComposition})) }}>
+        <div className="card" id='card'  key={key} onClick={() => { Open(); dispatch(setType({name:e.indexName,composition:e.indexComposition})) }}>
           <div className="inner-card">
             <div className="card-upper">
               <div className="card-top">
@@ -73,8 +73,8 @@ const Open =()=>{
                 <div className="card-bet-left">
                   <span>Underlying Tokens</span>
                   <div className="icons">
-                    {e.indexComposition.map((p)=>{
-                      return <img src={`https://test.joinclamp.com/tokens/${p.tokenName}.svg`} alt="" />
+                    {e.indexComposition.map((p,k)=>{
+                      return <img key={k} src={`https://test.joinclamp.com/tokens/${p.tokenName}.svg`} alt="" />
                     })}
                   </div>
 
