@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './buy.css'
 import "swiper/css/navigation";
 
@@ -21,10 +21,13 @@ import { Navigation } from "swiper";
 
 export default function Buy() {
     let dispatch = useDispatch();
-
+    const [Comp, setComp] = useState([])
     const Composition = useSelector((state) => state.allTypes.type)
-    let Comp = Composition.composition
 
+    useEffect(()=>{
+        setComp(Composition.composition)
+        console.log(Comp)
+    },[Composition])
 
     const Next =()=>{
         document.querySelector(".swiper-button-next").click()
@@ -55,7 +58,7 @@ export default function Buy() {
                                   <div className="token-composition">
                                       <h3>Token Composition</h3>
                                       <div className="compositions">
-                                          {Composition.composition.map((e,key) => {
+                                          {Comp.map((e,key) => {
                                               return (
                                                   <div className="composition" key={key}>
                                                       <div className="composition-top">
