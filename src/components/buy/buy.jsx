@@ -55,7 +55,7 @@ export default function Buy() {
                                   <div className="token-composition">
                                       <h3>Token Composition</h3>
                                       <div className="compositions">
-                                          {Comp.map((e,key) => {
+                                          {Composition.composition.map((e,key) => {
                                               return (
                                                   <div className="composition" key={key}>
                                                       <div className="composition-top">
