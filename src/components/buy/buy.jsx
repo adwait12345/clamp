@@ -37,7 +37,7 @@ export default function Buy() {
   return (
     <>
     
-    <div className="buy">
+    {/* <div className="buy">
         <div className="inner-buy">
                 <div className="buy-top">
             <h2>{Composition.name} Index</h2>
@@ -147,7 +147,7 @@ export default function Buy() {
 
         </div>
 
-    </div>
+    </div> */}
     </>
   )
 }
