@@ -23,7 +23,7 @@ export default function Buy() {
     let dispatch = useDispatch();
 
     const Composition = useSelector((state) => state.allTypes.type)
-    const Comp = Composition.composition
+    let Comp = Composition.composition
 
 
     const Next =()=>{
