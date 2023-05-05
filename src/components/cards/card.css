@@ -4,9 +4,10 @@
     height: 200px;
         padding: 20px 20px 0px 20px;
         border-radius: 5px;
-        /* background-color: #010409; */
-            border: 1px solid #30363d1c;
+    background-color: #161B22;
+        border: 1px solid #30363d;
         cursor: pointer;
+        color:#fff;
 }
 .card:hover{
     scale: 1.01;
@@ -27,6 +28,13 @@
 .card-top h2{
     font-weight: 400;
         transition: 0.2s ease-in;
+        display: flex;
+            align-items: center;
+            justify-content: space-between;
+                margin-bottom: 30px;
+}
+.card-top h2 svg{
+        color: #c8c8c8;
 }
 
 .card-bet{
@@ -39,6 +47,7 @@
     font-size: 13px;
     font-weight: 500;
     color: #757575;
+    text-align: right;
 }
 
 .card-bet-left{

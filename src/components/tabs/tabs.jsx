@@ -3,6 +3,9 @@ import './tabs.css'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Panels01 from '../panels/panel-01/panel-01';
 import Skleton from '../skeleton/skleton';
+import Userboard from '../userboard/userboard';
+import History from '../history/history';
+import Watchlist from '../watchlist/watchlist';
 // import 'react-tabs/style/react-tabs.css';
 
 export default function Tabss() {
@@ -14,14 +17,22 @@ export default function Tabss() {
                   <TabList>
                       <Tab>Explore</Tab>
                       <Tab>Dashboard</Tab>
+                      <Tab>History</Tab>
+                      <Tab>Watchlist</Tab>
                   </TabList>
 
                   <TabPanel>
                           <Panels01/>
                   </TabPanel>
                   <TabPanel>
-                    <Skleton/>
+                    <Userboard/>
                   </TabPanel>
+            <TabPanel>
+              <History />
+            </TabPanel>
+            <TabPanel>
+              <Watchlist />
+            </TabPanel>
               </Tabs> 
             </div>
 

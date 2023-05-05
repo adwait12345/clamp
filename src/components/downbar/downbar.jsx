@@ -4,7 +4,7 @@ import './downbar.css'
 import { useDispatch, useSelector } from "react-redux";
 import { setDown } from '../../redux/action/action'
 
-import { IoIosCloseCircleOutline } from 'react-icons/io';
+import { IoIosClose } from 'react-icons/io';
 import Buy from '../buy/buy';
 
 
@@ -36,7 +36,7 @@ export default function Downbar() {
     <div className="downbar" id='downbar'>
         <div className="inner-downbar">
             <div className="downbar-top">
-             <IoIosCloseCircleOutline onClick={()=>{close();}} />
+                      <IoIosClose onClick={()=>{close();}} />
             </div>
             <div className="downbar-bot">
                 <Buy/>

@@ -51,7 +51,7 @@ export default function Buy() {
                               <div className="buy-bet">
                                   <div className="buy-input">
                                       <h3>Enter Amount <span>in $</span></h3>
-                                      <input type="number" />
+                                      <input type="number" value="1" />
                                       <h3>Amount in Matic <span>approx</span> </h3>
                                       <p>1.0153387220743777</p>
                                   </div>

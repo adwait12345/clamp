@@ -4,6 +4,8 @@ import DownImg from '../../assets/svgs/down-right.svg'
 import axios from "axios"
 import Skleton from '../skeleton/skleton'
 import Skletons from '../skeleton/Skletons'
+import { MdOutlineArrowForwardIos } from 'react-icons/md';
+
 
 import { useDispatch, useSelector } from "react-redux";
 import { setDown,setType } from '../../redux/action/action'
@@ -67,7 +69,7 @@ const Open =()=>{
           <div className="inner-card">
             <div className="card-upper">
               <div className="card-top">
-                <h2>{e.indexName}</h2>
+                <h2>{e.indexName} <MdOutlineArrowForwardIos /></h2>
               </div>
               <div className="card-bet">
                 <div className="card-bet-left">
@@ -83,7 +85,7 @@ const Open =()=>{
                   <span> Price Change <br /> (in 24hrs)</span>
                   <div className="stat">
                     <img src={DownImg} alt="" />
-                    <h1>-0.6%</h1>
+                    <h1>1.6%</h1>
                   </div>
                 </div>
               </div>
