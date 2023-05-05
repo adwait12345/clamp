@@ -59,22 +59,22 @@ export default function Buy() {
                                       <h3>Token Composition</h3>
                                       <div className="compositions">
                                           {Comp.map((e,key) => {
-                                              return (
-                                                  <div className="composition" key={key}>
-                                                      <div className="composition-top">
-                                                          <img src={`https://test.joinclamp.com/tokens/${e.tokenName}.svg`} alt="" />
-                                                          <p>{e.tokenName} <br /> <span>{e.tokenName}</span></p>
-                                                      </div>
-                                                      <div className="composition-bet">
-                                                          <div className="composition-bet-top">
-                                                              <p>50.00%</p>
-                                                          </div>
-                                                          <div className="composition-bet-bot">
-                                                              <input type="range" name="" id="" />
-                                                              <span>0.000010742588281163539</span>
-                                                          </div>
-                                                      </div>
-                                                  </div>
+                                              return (<span>{e.tokenName}</span>
+                                                //   <div className="composition" key={key}>
+                                                //       <div className="composition-top">
+                                                //           <img src={`https://test.joinclamp.com/tokens/${e.tokenName}.svg`} alt="" />
+                                                //           <p>{e.tokenName} <br /> <span>{e.tokenName}</span></p>
+                                                //       </div>
+                                                //       <div className="composition-bet">
+                                                //           <div className="composition-bet-top">
+                                                //               <p>50.00%</p>
+                                                //           </div>
+                                                //           <div className="composition-bet-bot">
+                                                //               <input type="range" name="" id="" />
+                                                //               <span>0.000010742588281163539</span>
+                                                //           </div>
+                                                //       </div>
+                                                //   </div>
                                               )
                                           })}
 
