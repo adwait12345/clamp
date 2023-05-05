@@ -1,353 +1,345 @@
-.buy{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    color: #000;
+.buy {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #000;
 }
 
-.inner-buy{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-
+.inner-buy {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
 }
 
-.buy-top h2{
-font-size: 30px;
-    font-family: var(--font-family);
-margin: 10px;
-    margin-left: 10px;
-    font-weight: 600;}
+.buy-top h2 {
+  font-size: 30px;
+  font-family: var(--font-family);
+  margin: 10px;
+  margin-left: 10px;
+  font-weight: 600;
+}
 
-.buy-bet{
-    /* border: 1px solid #30363d42;
+.buy-bet {
+  /* border: 1px solid #30363d42;
         padding: 20px; */
-        border-radius: 10px;
+  border-radius: 10px;
 }
 
-.buy-input h3{
-    font-size: 16px;
-    color: #1f1f1f;
-    font-weight: 500;
-    margin: 0 0 10px 0;
-    display: flex;
-    align-items: center;
+.buy-input h3 {
+  font-size: 16px;
+  color: #1f1f1f;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
 }
-.buy-input input{
-    width: 300px;
-    height: 40px;
-    font-size: 15px;
-    border: 1px solid #00000061;
-        border-radius: 5px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-
+.buy-input input {
+  width: 300px;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid #00000061;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-left: 10px;
 }
 
-.buy-input p{
-    margin: 0;
-        font-weight: lighter;
+.buy-input p {
+  margin: 0;
+  font-weight: lighter;
 }
 .swiper-horizontal {
-    margin-left: 5px !important;
+  margin-left: 5px !important;
 }
-.buy-input span{
-font-size: 12px;
-display: flex;
-    align-items: center;
-    height: 20px;
-    width: 50px;
-    justify-content: center;
-    border: 1px solid #08fe35;
-    border-radius: 3px;
-    background-color: #45ff4538;
-    color: #03bf25;
-    margin-left: 10px;
-    margin-top: 5px;
-    }
-
-
-.composition{
-    display: flex;
-    width: 300px;
-    height: 150px;
-    flex-direction: column;
-        border: 1px solid #00000026;    padding: 15px;
-    border-radius: 5px;
-    margin-right: 20px;
-    justify-content: space-between;
- 
+.buy-input span {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 50px;
+  justify-content: center;
+  border: 1px solid #08fe35;
+  border-radius: 3px;
+  background-color: #45ff4538;
+  color: #03bf25;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
-.token-composition h3{
-        font-size: 16px;
-            color: #1f1f1f;
-            font-weight: 500;
-            margin: 0 0 10px 0;
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
+.composition {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  flex-direction: column;
+  border: 1px solid #00000026;
+  padding: 15px;
+  border-radius: 5px;
+  margin-right: 20px;
+  justify-content: space-between;
 }
 
-.composition-top{
-    display: flex;
-    align-items: center;
+.token-composition h3 {
+  font-size: 16px;
+  color: #1f1f1f;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.composition-top img{
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
+.composition-top {
+  display: flex;
+  align-items: center;
 }
 
-.composition-top p{
-    font-size: 18px;
-    font-weight: 400;
-        margin: 0;
-        line-height: 18px;
-}
-.composition-top p span{
-    font-size: 13px;
-    color: #757575;
+.composition-top img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 
-.composition-bet{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.composition-top p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 18px;
 }
-.composition-bet-top{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.composition-top p span {
+  font-size: 13px;
+  color: #757575;
 }
-.composition-bet-bot input{
-display: flex;
-    align-items: center;
-    max-width: 500px;
-    height: 4px;
-    width: 80%;
-    background: #fff;
-    margin-bottom: 20px;
+
+.composition-bet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.composition-bet-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.composition-bet-bot input {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  height: 4px;
+  width: 80%;
+  background: #fff;
+  margin-bottom: 20px;
 }
 
 input[type="range"] {
-    /* removing default appearance */
-    -webkit-appearance: none;
-    appearance: none;
-    /* creating a custom design */
-    width: 100%;
-    cursor: pointer;
-    outline: none;
-    /*  slider progress trick  */
-    overflow: hidden;
-    border-radius: 16px;
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  /*  slider progress trick  */
+  overflow: hidden;
+  border-radius: 16px;
 }
 
 /* Track: webkit browsers */
 input[type="range"]::-webkit-slider-runnable-track {
-    height: 15px;
-    background: #ccc;
-    border-radius: 16px;
-    z-index: 1;
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+  z-index: 1;
 }
 
 /* Track: Mozilla Firefox */
 input[type="range"]::-moz-range-track {
-    height: 15px;
-    background: #ccc;
-    border-radius: 16px;
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
 }
 
 /* Thumb: webkit */
 input[type="range"]::-webkit-slider-thumb {
-    /* removing default appearance */
-    -webkit-appearance: none;
-    appearance: none;
-    /* creating a custom design */
-    height: 15px;
-    z-index: 1;
-    overflow: visible;
-    width: 15px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    /* border: 2px solid #f50; */
-    /*  slider progress trick  */
-    box-shadow: -407px 0 0 400px #f50;
-    
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 15px;
+  z-index: 1;
+  overflow: visible;
+  width: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  /* border: 2px solid #f50; */
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px #f50;
 }
-
 
 /* Thumb: Firefox */
 input[type="range"]::-moz-range-thumb {
-    height: 15px;
-    width: 15px;
-    background-color: #fff;
-        border: 1px solid #000;
-    border-radius: 50%;
-    border: 1px solid #f50;
-    /*  slider progress trick  */
-    box-shadow: -407px 0 0 400px #f50;
-    
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  border: 1px solid #f50;
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px #f50;
 }
 
-.buy-bot{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-                margin-top: 20px;
-                            border-top: 1px solid #00000026;
+.buy-bot {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-top: 1px solid #00000026;
 }
-.buy-buttons{
-        display: flex;
-            width: 430px;
-            align-items: center;
-            justify-content: space-between;
-                margin-top: 20px;
-                margin-right: 5px;
+.buy-buttons {
+  display: flex;
+  width: 430px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 5px;
 }
-.buy-bot button{
-    width: 200px;
-    height: 45px;
-    font-family: var(--font-family);
-    font-weight: 500;
-    border: 1px solid #aaa9a9;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
+.buy-bot button {
+  width: 200px;
+  height: 45px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  border: 1px solid #aaa9a9;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-#next{
-    color: #fff;
-    background-color: #000;
+#next {
+  color: #fff;
+  background-color: #000;
 }
 
-.note p{
-    font-size: 13px;
-        color: #757575;
-        display: flex;
-        align-items: flex-start;
-            margin-top: 20px;
+.note p {
+  font-size: 13px;
+  color: #757575;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
 }
-.note svg{
-    width: 24px;
-        height: 20px;
-    margin-right: 5px;
+.note svg {
+  width: 24px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 .swiper-slide {
-    width: 100%;
+  width: 100%;
 }
-.swiper-slide-active{
-    margin-right: 2px;
+.swiper-slide-active {
+  margin-right: 2px;
 }
-.buy-bet{
-    /* height: 476px; */
-        display: flex;
-        flex-direction: column;
-    border: 1px solid #00000026;
-                justify-content: space-between;
-        padding: 20px;
+.buy-bet {
+  /* height: 476px; */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #00000026;
+  justify-content: space-between;
+  padding: 20px;
 }
 .swiper-button-next,
 .swiper-button-prev {
-display: none !important;
+  display: none !important;
 }
 
-.buy-final{
-    display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: flex-start;
+.buy-final {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.buy-final h1{
-    margin: 0;
+.buy-final h1 {
+  margin: 0;
 }
 
-.gas{
-    display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+.gas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .gas span {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.gas span svg{
- margin-right: 5px;
+.gas span svg {
+  margin-right: 5px;
 }
 
-.composition-buy p{
-    font-size: 25px;
-        margin: 0;
+.composition-buy p {
+  font-size: 25px;
+  margin: 0;
 }
-.composition-buy span{
-    color: #757575;
+.composition-buy span {
+  color: #757575;
 }
 
 @media only screen and (max-width: 1160px) {
-     .buy-bet{
-        height: 100%;
-        display: block;
-            margin-right: 5px;
-     }
-    .buy-bot{
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .buy-bet {
+    height: 100%;
+    display: block;
+    margin-right: 5px;
+  }
+  .buy-bot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media only screen and (max-width: 570px) {
-
-.buy-final h1{
+  .buy-final h1 {
     font-size: 20px;
-}
-.buy-final{
+  }
+  .buy-final {
     flex-direction: column;
-}
-.gas{
+  }
+  .gas {
     align-items: flex-start;
     margin-top: 10px;
-}
-.gas p{
+  }
+  .gas p {
     margin-top: 3px;
-}
-.buy-input input{
+  }
+  .buy-input input {
     width: 97%;
-}
-.buy-buttons{
+  }
+  .buy-buttons {
     flex-direction: column;
     width: 100%;
     transition: 0.2s ease-in;
-}
-.buy-buttons button{
+  }
+  .buy-buttons button {
     margin-bottom: 10px;
     width: 100%;
-        transition: 0.2s ease-in;
-}
-.buy-bot{
+    transition: 0.2s ease-in;
+  }
+  .buy-bot {
     border: none;
-}
+  }
 }
 @media only screen and (max-width: 400px) {
+  .buy {
+    width: 98%;
+  }
+  .buy-top h2 {
+    font-size: 20px;
+    transition: 0.2s ease-in;
+  }
 
-    .buy{
-        width: 98%;
-    }
-    .buy-top h2{
-        font-size: 20px;
-     transition: 0.2s ease-in;
-    }
-
-.react-tabs__tab-list li {
+  .react-tabs__tab-list li {
     margin-right: 16px;
     font-size: 12px;
-}
-
+  }
 }

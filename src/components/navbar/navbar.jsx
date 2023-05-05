@@ -1,17 +1,17 @@
-import React from 'react'
-import './navbar.css'
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import React from "react";
+import "./navbar.css";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export default function Navbar() {
   return (
     <>
-    <div className="navbar">
+      <div className="navbar">
         <div className="inner-navbar">
-                  <div className="navbar-left">
-                    <h3>clamp</h3>
-                  </div>
-                  <div className="navbar-right">
-                    {/* <button>Connect Wallet</button> */}
+          <div className="navbar-left">
+            <h3>clamp</h3>
+          </div>
+          <div className="navbar-right">
+            {/* <button>Connect Wallet</button> */}
 
             <ConnectButton.Custom>
               {({
@@ -25,22 +25,22 @@ export default function Navbar() {
               }) => {
                 // Note: If your app doesn't use authentication, you
                 // can remove all 'authenticationStatus' checks
-                const ready = mounted && authenticationStatus !== 'loading';
+                const ready = mounted && authenticationStatus !== "loading";
                 const connected =
                   ready &&
                   account &&
                   chain &&
                   (!authenticationStatus ||
-                    authenticationStatus === 'authenticated');
+                    authenticationStatus === "authenticated");
 
                 return (
                   <div
                     {...(!ready && {
-                      'aria-hidden': true,
-                      'style': {
+                      "aria-hidden": true,
+                      style: {
                         opacity: 0,
-                        pointerEvents: 'none',
-                        userSelect: 'none',
+                        pointerEvents: "none",
+                        userSelect: "none",
                       },
                     })}
                   >
@@ -62,32 +62,36 @@ export default function Navbar() {
                       }
 
                       return (
-                        <div style={{ display: 'flex', gap: 12 }}>
+                        <div style={{ display: "flex", gap: 12 }}>
                           <button
                             onClick={openChainModal}
-                            style={{ display: 'flex', alignItems: 'center',  }}
+                            style={{ display: "flex", alignItems: "center" }}
                             type="button"
                           >
                             {chain.hasIcon && (
                               <div
                                 style={{
-                                  display:"flex",
-                                  alignItems:"center",
-                                  justifyContent:"center",
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
                                   background: chain.iconBackground,
-                                  objectFit:"cover",
+                                  objectFit: "cover",
                                   width: 30,
                                   height: 30,
                                   borderRadius: 999,
-                                  overflow: 'hidden',
+                                  overflow: "hidden",
                                   marginRight: 5,
                                 }}
                               >
                                 {chain.iconUrl && (
                                   <img
-                                    alt={chain.name ?? 'Chain icon'}
+                                    alt={chain.name ?? "Chain icon"}
                                     src={chain.iconUrl}
-                                    style={{ width: 30, height: 30, objectFit: "cover", }}
+                                    style={{
+                                      width: 30,
+                                      height: 30,
+                                      objectFit: "cover",
+                                    }}
                                   />
                                 )}
                               </div>
@@ -99,7 +103,7 @@ export default function Navbar() {
                             {account.displayName}
                             {account.displayBalance
                               ? ` (${account.displayBalance})`
-                              : ''}
+                              : ""}
                           </button>
                         </div>
                       );
@@ -108,9 +112,9 @@ export default function Navbar() {
                 );
               }}
             </ConnectButton.Custom>
-                  </div>
+          </div>
         </div>
-    </div>
-     </>
-  )
+      </div>
+    </>
+  );
 }

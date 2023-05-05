@@ -1,6 +1,6 @@
-import React from 'react'
-import './panels.css'
-import Card from '../../cards/card'
+import React from "react";
+import "./panels.css";
+import Card from "../../cards/card";
 export default function Panels01() {
   return (
     <div>
@@ -8,10 +8,9 @@ export default function Panels01() {
         <h1>Buy Clamp Indexes</h1>
         <h4>Buy any crypto index anytime, anywhere.</h4>
         <div className="cardss">
-                <Card/>  
+          <Card />
         </div>
-
       </div>
     </div>
-  )
+  );
 }
