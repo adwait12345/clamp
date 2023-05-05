@@ -1,0 +1,125 @@
+.card{
+    display: flex;
+    /* width: 346px; */
+    height: 200px;
+        padding: 20px 20px 0px 20px;
+        border-radius: 5px;
+        /* background-color: #010409; */
+            border: 1px solid #30363d1c;
+        cursor: pointer;
+}
+.card:hover{
+    scale: 1.01;
+    transition: 0.1s ease-in;
+}
+.inner-card{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-upper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+.card-top h2{
+    font-weight: 400;
+        transition: 0.2s ease-in;
+}
+
+.card-bet{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.card-bet span{
+    font-size: 13px;
+    font-weight: 500;
+    color: #757575;
+}
+
+.card-bet-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+.icons img{
+    width: 35px;
+    height: 35px;
+    margin-right: 7.5px;
+        transition: 0.2s ease-in;
+
+}
+.card-bet-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.stat{
+    display: flex;
+}
+
+.card-bet-right h1{
+    margin: 0;
+    font-weight: 200;
+}
+
+.card-bot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.card-bot button{
+    
+width: 100%;
+    height: 50px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0D1117;
+    border-radius: 5px;
+    border: 1px solid #4f555d;
+    transition: 0.2s ease-out;
+}
+
+.card-bot button:hover{
+    background-color: #238636;
+    transition: 0.1s ease-in;
+}
+
+@media only screen and (max-width: 410px) {
+.icons img{
+    width: 25px;
+    height: 25px;
+    transition: 0.2s ease-in;
+}
+.card-bet span {
+    font-size: 10px;
+        transition: 0.2s ease-in;
+
+}
+.card-bet-right h1 {
+    font-size: 24px;
+        transition: 0.2s ease-in;
+}
+.card-top h2 {
+        transition: 0.2s ease-in;
+    font-size: 20px;
+}
+.card{
+    height: 150px;
+    transition: 0.2s ease-in;
+}
+}
